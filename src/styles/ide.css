@@ -1,0 +1,93 @@
+/* IDE Main Container */
+.ide-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Dark mode styles */
+.dark .ide-container {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+/* Tab styles */
+.tab-container {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  padding: 0.25rem 0.5rem 0 0.5rem;
+}
+
+.dark .tab-container {
+  background-color: #1f2937;
+  border-bottom-color: #374151;
+}
+
+/* Editor area */
+.editor-area {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.dark .editor-area {
+  background-color: #111827;
+}
+
+/* File explorer */
+.file-explorer {
+  width: 250px;
+  border-right: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  overflow-y: auto;
+}
+
+.dark .file-explorer {
+  background-color: #1f2937;
+  border-right-color: #374151;
+}
+
+/* Status bar */
+.status-bar {
+  height: 24px;
+  background-color: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  padding: 0 8px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.dark .status-bar {
+  background-color: #1f2937;
+  border-top-color: #374151;
+  color: #9ca3af;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4a5568;
+}
